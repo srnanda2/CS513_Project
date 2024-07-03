@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul  4 00:28:15 2024
+
+@author: Soumya Nanda
+"""
+
+CREATE TABLE Dish (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    description TEXT,
+    menus_appeared INT,
+    times_appeared INT,
+    first_appeared YEAR,
+    last_appeared YEAR,
+    lowest_price DECIMAL(10, 2),
+    highest_price DECIMAL(10, 2)
+);
+
+CREATE TABLE Menu (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    sponsor VARCHAR(255),
+    event VARCHAR(255),
+    venue VARCHAR(255),
+    place VARCHAR(255),
+    physical_description TEXT,
+    occasion VARCHAR(255),
+    notes TEXT,
+    call_number VARCHAR(255),
+    keywords TEXT,
+    currency_symbol VARCHAR(10),
+    status VARCHAR(50),
+    page_count INT,
+    dish_count INT
+);
+
+CREATE TABLE MenuPage (
+    id INT PRIMARY KEY,
+    menu_id INT,
+    page_number INT,
+    image_id VARCHAR(255),
+    full_height DECIMAL(10, 2),
+    full_width DECIMAL(10, 2),
+    uuid VARCHAR(255),
+    FOREIGN KEY (menu_id) REFERENCES Menu(id)
+);
+
+CREATE TABLE MenuItem (
+    id INT PRIMARY KEY,
+    menu_page_id INT,
+    price DECIMAL(10, 2),
+    high_price DECIMAL(10, 2),
+    dish_id INT,
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP,
+    xpos DECIMAL(10, 2),
+    ypos DECIMAL(10, 2),
+    FOREIGN KEY (menu_page_id) REFERENCES MenuPage(id),
+    FOREIGN KEY (dish_id) REFERENCES Dish(id)
+);
