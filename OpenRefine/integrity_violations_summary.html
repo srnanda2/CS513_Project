@@ -1,0 +1,70 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Constraint</th>
+      <th>Before Cleaning</th>
+      <th>After Cleaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MenuItem Primary Key</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Dish Primary Key</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>MenuPage Primary Key</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Menu Primary Key</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>MenuItem Foreign Key dish_id</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>MenuItem Foreign Key menu_page_id</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>MenuPage Foreign Key menu_id</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>MenuItem Missing Values</td>
+      <td>price           404842
+high_price      977148
+dish_id            241
+menu_page_id         0
+dtype: int64</td>
+      <td>price           0
+high_price      0
+dish_id         0
+menu_page_id    0
+dtype: int64</td>
+    </tr>
+    <tr>
+      <td>Dish Missing Values</td>
+      <td>name              0
+first_appeared    0
+last_appeared     0
+dtype: int64</td>
+      <td>name              0
+first_appeared    0
+last_appeared     0
+dtype: int64</td>
+    </tr>
+  </tbody>
+</table>

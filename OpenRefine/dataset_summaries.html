@@ -1,0 +1,1258 @@
+
+    <h2>Summary of MenuItem Dataset</h2>
+    <h3>Rows and Columns</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Original</th>
+      <th>Cleaned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rows</td>
+      <td>1332726</td>
+      <td>273237</td>
+    </tr>
+    <tr>
+      <td>Columns</td>
+      <td>14</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Missing Values and Data Types</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Field</th>
+      <th>Original Missing Values</th>
+      <th>Cleaned Missing Values</th>
+      <th>Original Data Type</th>
+      <th>Cleaned Data Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>created_at</td>
+      <td>0</td>
+      <td>0</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>1332726</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>dish_id</td>
+      <td>241</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>dish_name</td>
+      <td>1332726</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>event</td>
+      <td>1332726</td>
+      <td>206515</td>
+      <td>float64</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>high_price</td>
+      <td>1240821</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>id_dish</td>
+      <td>1332726</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>menu_date</td>
+      <td>1332726</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>menu_page_id</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>price</td>
+      <td>445916</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>updated_at</td>
+      <td>0</td>
+      <td>0</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>xpos</td>
+      <td>0</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>ypos</td>
+      <td>0</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Original Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>created_at</th>
+      <th>date</th>
+      <th>dish_id</th>
+      <th>dish_name</th>
+      <th>event</th>
+      <th>high_price</th>
+      <th>id</th>
+      <th>id_dish</th>
+      <th>menu_date</th>
+      <th>menu_page_id</th>
+      <th>price</th>
+      <th>updated_at</th>
+      <th>xpos</th>
+      <th>ypos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2011-03-28 15:00:44 UTC</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1389</td>
+      <td>0.4</td>
+      <td>2011-04-19 04:33:15 UTC</td>
+      <td>0.111429</td>
+      <td>0.254735</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 15:01:13 UTC</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1389</td>
+      <td>0.6</td>
+      <td>2011-04-19 15:00:54 UTC</td>
+      <td>0.438571</td>
+      <td>0.254735</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 15:01:40 UTC</td>
+      <td>NaN</td>
+      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1389</td>
+      <td>0.4</td>
+      <td>2011-04-19 19:10:05 UTC</td>
+      <td>0.140000</td>
+      <td>0.261922</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 15:01:51 UTC</td>
+      <td>NaN</td>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1389</td>
+      <td>0.5</td>
+      <td>2011-04-19 19:07:01 UTC</td>
+      <td>0.377143</td>
+      <td>0.262720</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 15:21:26 UTC</td>
+      <td>NaN</td>
+      <td>5.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3079</td>
+      <td>0.5</td>
+      <td>2011-04-13 15:25:27 UTC</td>
+      <td>0.105714</td>
+      <td>0.313178</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Cleaned Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>created_at</th>
+      <th>date</th>
+      <th>dish_id</th>
+      <th>dish_name</th>
+      <th>event</th>
+      <th>high_price</th>
+      <th>id</th>
+      <th>id_dish</th>
+      <th>menu_date</th>
+      <th>menu_page_id</th>
+      <th>price</th>
+      <th>updated_at</th>
+      <th>xpos</th>
+      <th>ypos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2011-03-28 15:01:13 UTC</td>
+      <td>1900.0</td>
+      <td>2.0</td>
+      <td>Chicken gumbo</td>
+      <td>MENU</td>
+      <td>0.60</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1900-04-09T00:00:00Z</td>
+      <td>1389</td>
+      <td>0.60</td>
+      <td>2011-04-19 15:00:54 UTC</td>
+      <td>0.438571</td>
+      <td>0.254735</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 15:01:40 UTC</td>
+      <td>1900.0</td>
+      <td>3.0</td>
+      <td>Tomato aux croutons</td>
+      <td>MENU</td>
+      <td>0.40</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1900-04-09T00:00:00Z</td>
+      <td>1389</td>
+      <td>0.40</td>
+      <td>2011-04-19 19:10:05 UTC</td>
+      <td>0.140000</td>
+      <td>0.261922</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 15:01:51 UTC</td>
+      <td>1900.0</td>
+      <td>4.0</td>
+      <td>Onion au gratin</td>
+      <td>MENU</td>
+      <td>0.50</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1900-04-09T00:00:00Z</td>
+      <td>1389</td>
+      <td>0.50</td>
+      <td>2011-04-19 19:07:01 UTC</td>
+      <td>0.377143</td>
+      <td>0.262720</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 15:21:26 UTC</td>
+      <td>1900.0</td>
+      <td>5.0</td>
+      <td>St. Emilion</td>
+      <td>MENU</td>
+      <td>1.00</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1900-05-21T00:00:00Z</td>
+      <td>3079</td>
+      <td>0.50</td>
+      <td>2011-04-13 15:25:27 UTC</td>
+      <td>0.105714</td>
+      <td>0.313178</td>
+    </tr>
+    <tr>
+      <td>2011-03-28 19:33:37 UTC</td>
+      <td>1900.0</td>
+      <td>9.0</td>
+      <td>Clam broth (cup)</td>
+      <td>MENU</td>
+      <td>0.25</td>
+      <td>8</td>
+      <td>9</td>
+      <td>1900-04-09T00:00:00Z</td>
+      <td>1389</td>
+      <td>0.25</td>
+      <td>2011-04-19 19:06:08 UTC</td>
+      <td>0.167143</td>
+      <td>0.273101</td>
+    </tr>
+  </tbody>
+</table>
+    
+
+    <h2>Summary of Dish Dataset</h2>
+    <h3>Rows and Columns</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Original</th>
+      <th>Cleaned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rows</td>
+      <td>423397</td>
+      <td>11033</td>
+    </tr>
+    <tr>
+      <td>Columns</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Missing Values and Data Types</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Field</th>
+      <th>Original Missing Values</th>
+      <th>Cleaned Missing Values</th>
+      <th>Original Data Type</th>
+      <th>Cleaned Data Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>description</td>
+      <td>423397</td>
+      <td>11033</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>first_appeared</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>highest_price</td>
+      <td>29100</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>last_appeared</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>lowest_price</td>
+      <td>29100</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>menus_appeared</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>0</td>
+      <td>0</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>times_appeared</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Original Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>description</th>
+      <th>first_appeared</th>
+      <th>highest_price</th>
+      <th>id</th>
+      <th>last_appeared</th>
+      <th>lowest_price</th>
+      <th>menus_appeared</th>
+      <th>name</th>
+      <th>times_appeared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>1897</td>
+      <td>0.4</td>
+      <td>1</td>
+      <td>1927</td>
+      <td>0.20</td>
+      <td>8</td>
+      <td>Consomme printaniere royal</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1895</td>
+      <td>0.8</td>
+      <td>2</td>
+      <td>1960</td>
+      <td>0.10</td>
+      <td>111</td>
+      <td>Chicken gumbo</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1893</td>
+      <td>0.4</td>
+      <td>3</td>
+      <td>1917</td>
+      <td>0.25</td>
+      <td>13</td>
+      <td>Tomato aux croutons</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1900</td>
+      <td>1.0</td>
+      <td>4</td>
+      <td>1971</td>
+      <td>0.25</td>
+      <td>41</td>
+      <td>Onion au gratin</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1881</td>
+      <td>18.0</td>
+      <td>5</td>
+      <td>1981</td>
+      <td>0.00</td>
+      <td>66</td>
+      <td>St. Emilion</td>
+      <td>68</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Cleaned Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>description</th>
+      <th>first_appeared</th>
+      <th>highest_price</th>
+      <th>id</th>
+      <th>last_appeared</th>
+      <th>lowest_price</th>
+      <th>menus_appeared</th>
+      <th>name</th>
+      <th>times_appeared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>1895</td>
+      <td>0.8</td>
+      <td>2</td>
+      <td>1960</td>
+      <td>0.10</td>
+      <td>111</td>
+      <td>Chicken gumbo</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1893</td>
+      <td>0.4</td>
+      <td>3</td>
+      <td>1917</td>
+      <td>0.25</td>
+      <td>13</td>
+      <td>Tomato aux croutons</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1900</td>
+      <td>1.0</td>
+      <td>4</td>
+      <td>1971</td>
+      <td>0.25</td>
+      <td>41</td>
+      <td>Onion au gratin</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1881</td>
+      <td>18.0</td>
+      <td>5</td>
+      <td>1981</td>
+      <td>0.00</td>
+      <td>66</td>
+      <td>St. Emilion</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>1897</td>
+      <td>0.6</td>
+      <td>8</td>
+      <td>1961</td>
+      <td>0.10</td>
+      <td>48</td>
+      <td>Chicken soup with rice</td>
+      <td>49</td>
+    </tr>
+  </tbody>
+</table>
+    
+
+    <h2>Summary of MenuPage Dataset</h2>
+    <h3>Rows and Columns</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Original</th>
+      <th>Cleaned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rows</td>
+      <td>66937</td>
+      <td>61134</td>
+    </tr>
+    <tr>
+      <td>Columns</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Missing Values and Data Types</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Field</th>
+      <th>Original Missing Values</th>
+      <th>Cleaned Missing Values</th>
+      <th>Original Data Type</th>
+      <th>Cleaned Data Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>full_height</td>
+      <td>329</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>full_width</td>
+      <td>329</td>
+      <td>0</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>image_id</td>
+      <td>0</td>
+      <td>0</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>menu_id</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>page_number</td>
+      <td>1202</td>
+      <td>945</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>uuid</td>
+      <td>0</td>
+      <td>0</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Original Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>full_height</th>
+      <th>full_width</th>
+      <th>id</th>
+      <th>image_id</th>
+      <th>menu_id</th>
+      <th>page_number</th>
+      <th>uuid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7230.0</td>
+      <td>5428.0</td>
+      <td>119</td>
+      <td>1603595</td>
+      <td>12460</td>
+      <td>1.0</td>
+      <td>510d47e4-2955-a3d9-e040-e00a18064a99</td>
+    </tr>
+    <tr>
+      <td>5428.0</td>
+      <td>7230.0</td>
+      <td>120</td>
+      <td>1603596</td>
+      <td>12460</td>
+      <td>2.0</td>
+      <td>510d47e4-2956-a3d9-e040-e00a18064a99</td>
+    </tr>
+    <tr>
+      <td>7230.0</td>
+      <td>5428.0</td>
+      <td>121</td>
+      <td>1603597</td>
+      <td>12460</td>
+      <td>3.0</td>
+      <td>510d47e4-2957-a3d9-e040-e00a18064a99</td>
+    </tr>
+    <tr>
+      <td>7230.0</td>
+      <td>5428.0</td>
+      <td>122</td>
+      <td>1603598</td>
+      <td>12460</td>
+      <td>4.0</td>
+      <td>510d47e4-2958-a3d9-e040-e00a18064a99</td>
+    </tr>
+    <tr>
+      <td>7230.0</td>
+      <td>5428.0</td>
+      <td>123</td>
+      <td>1603591</td>
+      <td>12461</td>
+      <td>1.0</td>
+      <td>510d47e4-2959-a3d9-e040-e00a18064a99</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Cleaned Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>full_height</th>
+      <th>full_width</th>
+      <th>id</th>
+      <th>image_id</th>
+      <th>menu_id</th>
+      <th>page_number</th>
+      <th>uuid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3074.0</td>
+      <td>2046.0</td>
+      <td>129</td>
+      <td>4000009170</td>
+      <td>12463</td>
+      <td>2.0</td>
+      <td>510d47db-491e-a3d9-e040-e00a18064a99</td>
+    </tr>
+    <tr>
+      <td>3049.0</td>
+      <td>2004.0</td>
+      <td>130</td>
+      <td>466928</td>
+      <td>12463</td>
+      <td>1.0</td>
+      <td>510D47DB-491F-A3D9-E040-E00A18064A99</td>
+    </tr>
+    <tr>
+      <td>3690.0</td>
+      <td>2888.0</td>
+      <td>131</td>
+      <td>4000009171</td>
+      <td>12464</td>
+      <td>2.0</td>
+      <td>510d47db-4920-a3d9-e040-e00a18064a99</td>
+    </tr>
+    <tr>
+      <td>3679.0</td>
+      <td>2866.0</td>
+      <td>132</td>
+      <td>466930</td>
+      <td>12464</td>
+      <td>1.0</td>
+      <td>510d47db-4921-a3d9-e040-e00a18064a99</td>
+    </tr>
+    <tr>
+      <td>3413.0</td>
+      <td>2307.0</td>
+      <td>133</td>
+      <td>4000009172</td>
+      <td>12465</td>
+      <td>2.0</td>
+      <td>510d47db-4922-a3d9-e040-e00a18064a99</td>
+    </tr>
+  </tbody>
+</table>
+    
+
+    <h2>Summary of Menu Dataset</h2>
+    <h3>Rows and Columns</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Original</th>
+      <th>Cleaned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rows</td>
+      <td>17545</td>
+      <td>17545</td>
+    </tr>
+    <tr>
+      <td>Columns</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Missing Values and Data Types</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Field</th>
+      <th>Original Missing Values</th>
+      <th>Cleaned Missing Values</th>
+      <th>Original Data Type</th>
+      <th>Cleaned Data Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>call_number</td>
+      <td>1562</td>
+      <td>1562</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>11089</td>
+      <td>11089</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>currency_symbol</td>
+      <td>11089</td>
+      <td>11089</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>586</td>
+      <td>586</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>dish_count</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>event</td>
+      <td>9391</td>
+      <td>9391</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>keywords</td>
+      <td>17545</td>
+      <td>17545</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>language</td>
+      <td>17545</td>
+      <td>17545</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>location</td>
+      <td>0</td>
+      <td>0</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>location_type</td>
+      <td>17545</td>
+      <td>17545</td>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>14348</td>
+      <td>14348</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>notes</td>
+      <td>6932</td>
+      <td>6933</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>occasion</td>
+      <td>13754</td>
+      <td>13754</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>page_count</td>
+      <td>0</td>
+      <td>0</td>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>physical_description</td>
+      <td>2782</td>
+      <td>2782</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>place</td>
+      <td>9422</td>
+      <td>9422</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>sponsor</td>
+      <td>1561</td>
+      <td>1561</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>0</td>
+      <td>0</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <td>venue</td>
+      <td>9426</td>
+      <td>9426</td>
+      <td>object</td>
+      <td>object</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Original Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>call_number</th>
+      <th>currency</th>
+      <th>currency_symbol</th>
+      <th>date</th>
+      <th>dish_count</th>
+      <th>event</th>
+      <th>id</th>
+      <th>keywords</th>
+      <th>language</th>
+      <th>location</th>
+      <th>location_type</th>
+      <th>name</th>
+      <th>notes</th>
+      <th>occasion</th>
+      <th>page_count</th>
+      <th>physical_description</th>
+      <th>place</th>
+      <th>sponsor</th>
+      <th>status</th>
+      <th>venue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1900-2822</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-15</td>
+      <td>67</td>
+      <td>BREAKFAST</td>
+      <td>12463</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hotel Eastman</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>EASTER;</td>
+      <td>2</td>
+      <td>CARD; 4.75X7.5;</td>
+      <td>HOT SPRINGS, AR</td>
+      <td>HOTEL EASTMAN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2825</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-15</td>
+      <td>34</td>
+      <td>[DINNER]</td>
+      <td>12464</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Republican House</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>WEDGEWOOD BLUE CARD; WHITE EMBOSSED GREEK KEY BORDER; "EASTER SUNDAY" EMBOSSED IN WHITE; VIOLET COLORED SPRAY OF FLOWERS IN UPPER LEFT CORNER;</td>
+      <td>EASTER;</td>
+      <td>2</td>
+      <td>CARD; ILLUS; COL; 7.0X9.0;</td>
+      <td>MILWAUKEE, [WI];</td>
+      <td>REPUBLICAN HOUSE</td>
+      <td>under review</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2827</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-16</td>
+      <td>84</td>
+      <td>FRUHSTUCK/BREAKFAST;</td>
+      <td>12465</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Norddeutscher Lloyd Bremen</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>MENU IN GERMAN AND ENGLISH; ILLUS, STEAMSHIP AND SAILING VESSEL;</td>
+      <td>&lt;NA&gt;</td>
+      <td>2</td>
+      <td>CARD; ILLU; COL; 5.5X8.0;</td>
+      <td>DAMPFER KAISER WILHELM DER GROSSE;</td>
+      <td>NORDDEUTSCHER LLOYD BREMEN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2828</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-16</td>
+      <td>63</td>
+      <td>LUNCH;</td>
+      <td>12466</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Norddeutscher Lloyd Bremen</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>MENU IN GERMAN AND ENGLISH; ILLUS, HARBOR SCENE WITH SAILING VESSEL;</td>
+      <td>&lt;NA&gt;</td>
+      <td>2</td>
+      <td>CARD; ILLU; COL; 5.5X8.0;</td>
+      <td>DAMPFER KAISER WILHELM DER GROSSE;</td>
+      <td>NORDDEUTSCHER LLOYD BREMEN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2829</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-16</td>
+      <td>33</td>
+      <td>DINNER;</td>
+      <td>12467</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Norddeutscher Lloyd Bremen</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>MENU IN GERMAN AND ENGLISH; ILLUS, HARBOR SCENE WITH ROCKS AND LIGHTHOUSE; STEAMSHIP AND SAILING VESSELS; CONCERT PROGRAM; DATES:  ON GERMAN SIDE OF MENU "MONTAG, DEN 16 APRIL 1900"; ON ENGLISH SIDE OF MENU "MONDAY, APRIL 15TH, 1900";</td>
+      <td>&lt;NA&gt;</td>
+      <td>4</td>
+      <td>FOLDER; ILLU; COL; 5.5X7.5;</td>
+      <td>DAMPFER KAISER WILHELM DER GROSSE;</td>
+      <td>NORDDEUTSCHER LLOYD BREMEN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>First Few Rows - Cleaned Dataset</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>call_number</th>
+      <th>currency</th>
+      <th>currency_symbol</th>
+      <th>date</th>
+      <th>dish_count</th>
+      <th>event</th>
+      <th>id</th>
+      <th>keywords</th>
+      <th>language</th>
+      <th>location</th>
+      <th>location_type</th>
+      <th>name</th>
+      <th>notes</th>
+      <th>occasion</th>
+      <th>page_count</th>
+      <th>physical_description</th>
+      <th>place</th>
+      <th>sponsor</th>
+      <th>status</th>
+      <th>venue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1900-2822</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-15T00:00:00Z</td>
+      <td>67</td>
+      <td>BREAKFAST</td>
+      <td>12463</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hotel Eastman</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>EASTER;</td>
+      <td>2</td>
+      <td>CARD; 4.75X7.5;</td>
+      <td>HOT SPRINGS, AR</td>
+      <td>HOTEL EASTMAN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2825</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-15T00:00:00Z</td>
+      <td>34</td>
+      <td>DINNER</td>
+      <td>12464</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Republican House</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>WEDGEWOOD BLUE CARD; WHITE EMBOSSED GREEK KEY BORDER; "EASTER SUNDAY" EMBOSSED IN WHITE; VIOLET COLORED SPRAY OF FLOWERS IN UPPER LEFT CORNER;</td>
+      <td>EASTER;</td>
+      <td>2</td>
+      <td>CARD; ILLUS; COL; 7.0X9.0;</td>
+      <td>MILWAUKEE, [WI];</td>
+      <td>REPUBLICAN HOUSE</td>
+      <td>under review</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2827</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-16T00:00:00Z</td>
+      <td>84</td>
+      <td>FRUHSTUCK-BREAKFAST</td>
+      <td>12465</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Norddeutscher Lloyd Bremen</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>MENU IN GERMAN AND ENGLISH; ILLUS, STEAMSHIP AND SAILING VESSEL;</td>
+      <td>&lt;NA&gt;</td>
+      <td>2</td>
+      <td>CARD; ILLU; COL; 5.5X8.0;</td>
+      <td>DAMPFER KAISER WILHELM DER GROSSE;</td>
+      <td>NORDDEUTSCHER LLOYD BREMEN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2828</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-16T00:00:00Z</td>
+      <td>63</td>
+      <td>LUNCH</td>
+      <td>12466</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Norddeutscher Lloyd Bremen</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>MENU IN GERMAN AND ENGLISH; ILLUS, HARBOR SCENE WITH SAILING VESSEL;</td>
+      <td>&lt;NA&gt;</td>
+      <td>2</td>
+      <td>CARD; ILLU; COL; 5.5X8.0;</td>
+      <td>DAMPFER KAISER WILHELM DER GROSSE;</td>
+      <td>NORDDEUTSCHER LLOYD BREMEN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+    <tr>
+      <td>1900-2829</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+      <td>1900-04-16T00:00:00Z</td>
+      <td>33</td>
+      <td>DINNER</td>
+      <td>12467</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Norddeutscher Lloyd Bremen</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>MENU IN GERMAN AND ENGLISH; ILLUS, HARBOR SCENE WITH ROCKS AND LIGHTHOUSE; STEAMSHIP AND SAILING VESSELS; CONCERT PROGRAM; DATES:  ON GERMAN SIDE OF MENU "MONTAG, DEN 16 APRIL 1900"; ON ENGLISH SIDE OF MENU "MONDAY, APRIL 15TH, 1900";</td>
+      <td>&lt;NA&gt;</td>
+      <td>4</td>
+      <td>FOLDER; ILLU; COL; 5.5X7.5;</td>
+      <td>DAMPFER KAISER WILHELM DER GROSSE;</td>
+      <td>NORDDEUTSCHER LLOYD BREMEN</td>
+      <td>complete</td>
+      <td>COMMERCIAL</td>
+    </tr>
+  </tbody>
+</table>
+    
